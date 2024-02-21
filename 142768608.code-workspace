@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../142768608"
+		},
+		{
+			"path": "../cs50backup"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"gitdoc.enabled": true,
+		"liveServer.settings.multiRootWorkspaceName": "website1"
+	}
+}
