@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../142768608"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"gitdoc.enabled": true,
+		"liveServer.settings.multiRootWorkspaceName": "website1"
+	}
+}

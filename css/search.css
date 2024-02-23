@@ -27,6 +27,8 @@ body{
     border: 0;
     height: 50px;
     width: 50px;
+    cursor: pointer;
+    transition: transform 3s ease;
 }
 
 .search .input {
@@ -36,6 +38,7 @@ body{
     height: 50px;
     width: 50x;
     padding: 15px;
+    transition: width 3s ease;
 
 }
 
