@@ -13,5 +13,16 @@ body {
     width: 90vw;
     background-color: green;
     display: flex;
-    
+
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
 }
