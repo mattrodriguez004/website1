@@ -19,7 +19,7 @@ body {
 
 
 .hero {
-    Background-image: url(images/motherboard.jpg);
+    background-image: url(images/motherboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -36,7 +36,7 @@ body {
 }
 
 .hero::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
