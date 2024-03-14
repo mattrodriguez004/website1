@@ -54,3 +54,12 @@ body{
 .search.active .btn {
     transform: translateX(198px);
 }
+
+.form {
+    position: absolute;
+    height: 200vh;
+    top:0;
+    left:0;
+
+}
+
