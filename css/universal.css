@@ -1,3 +1,26 @@
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.bg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background-image: url(images/indexbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 .nav {
     position: fixed;
     background-color: #222;
@@ -46,4 +69,14 @@
   .nav a:hover {
     color: rgb(192,57,43);
     font-weight: bold;
+  }
+
+
+  .spotify-player-container {
+    height  : 80vh;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
   }

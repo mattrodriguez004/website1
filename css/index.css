@@ -1,3 +1,17 @@
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background-image: url(https://unsplash.com/photos/grayscale-photo-of-a-dock-BeNerxxCKLU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
 .nav {
     position: fixed;
     background-color: #222;

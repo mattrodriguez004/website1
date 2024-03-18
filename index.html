@@ -1,33 +1,78 @@
 <!DOCTYPE HTML>
-<html lang="eng">
+<html lang="en">
 <head>
-
     <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="css/loading.css">
 </head>
 <body>
-<nav class = "nav">
-    <div class = "container">
-    <h1 class = "logo"><a href = "navigation.html"> Homepage</a></h1>
-    <ul>
-        <li><a href = "#" class = "current">Home</a></li>
-        <li><a href = "http://127.0.0.1:5500/website1/search.html" >Search</a></li>
-        <li><a href = "http://127.0.0.1:5500/website1/loading.html" >Loading</a></li>
-        <li><a href = "http://127.0.0.1:5500/website1/expanding.html">Expanding</a></li>
-        <li><a href = "http://127.0.0.1:5500/website1/sound.html" >Sound</a></li>
-        <li><a href = "http://127.0.0.1:5500/website1/navigation.html" >Navigation</a></li>
-        <li><a href = "http://127.0.0.1:5500/website1/landingpage.html" >Landing-Page</a></li>
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="index.html"> Homepage</a></h1>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/website1/search.html">Search</a></li>
+                <li><a href="http://127.0.0.1:5500/website1/loading.html">Loading</a></li>
+                <li><a href="http://127.0.0.1:5500/website1/expanding.html">Expanding</a></li>
+                <li><a href="http://127.0.0.1:5500/website1/sound.html">Sound</a></li>
+                <li><a href="http://127.0.0.1:5500/website1/navigation.html">Navigation</a></li>
+                <li><a href="http://127.0.0.1:5500/website1/landingpage.html">Landing-Page</a></li>
+                
+            </ul>
+        </div>
+    </nav>
 
-    </ul>
+    <div class="bg"></div>
+   <!--- <div class="spotify-player-container">
+        <iframe src="https://open.spotify.com/embed/track/7vFv0yFGMJW3qVXbAd9BK9?utm_source=generator&theme" width="100%" height="100" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
-</nav>
 
+    <script src="js/universal.js"></script>
+    <script>
+
+        const spotifyIframe = document.querySelector('iframe[src*="open.spotify.com"]');
+
+        function playSpotifyTrack() {
+            if (spotifyIframe) {
+                spotifyIframe.contentWindow.postMessage('{"method":"play"}', '*');
+            }
+        }
+
+        function pauseSpotifyTrack() {
+            if (spotifyIframe) {
+                spotifyIframe.contentWindow.postMessage('{"method":"pause"}', '*');
+            }
+        }
+
+        const playButton = document.getElementById('playButton');
+        if (playButton) {
+            playButton.addEventListener('click', playSpotifyTrack);
+        }
+    </script>
+    <script>
+
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        const spotifyFrames = document.querySelectorAll('iframe[src*="open.spotify.com"]');
+
+        function shuffleSpotifyTracks() {
+            const spotifyFramesArray = Array.from(spotifyFrames);
+            const shuffledFrames = shuffle(spotifyFramesArray);
+            const container = document.querySelector('.spotify-player-container');
+            container.innerHTML = '';
+            shuffledFrames.forEach(frame => {
+                container.appendChild(frame);
+            });
+        }
+
+        const shuffleButton = document.getElementById('shuffleButton');
+        if (shuffleButton) {
+            shuffleButton.addEventListener('click', shuffleSpotifyTracks);
+        }
+    </script>
 </body>
-<script src = "js/universal.js"></script>
-<script src = "js/loading.js"></script>
-
-
-
 </html>
-
-
